@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
       phoneNumber: this.phoneNo,
       codeAutoRetrievalTimeout: autoRetrieve,
       codeSent: smsCodeSent,
-      timeout: const Duration(seconds: 5),
+      timeout: const Duration(seconds: 60),
       verificationCompleted: verifiredSuccess,
       verificationFailed: verfiFailed,
     );
@@ -113,6 +113,9 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  // InitState Section ....
+
+  // Widget build section ....
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
